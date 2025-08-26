@@ -2,7 +2,7 @@ export const settings = {
     canvas: {
         id: 'popcorn',
     },
-    sprite: "sprite.png",
+    sprite: "sprite--test.png",
     popcorns: [
         {
             sx: 0,
@@ -109,7 +109,7 @@ export const settings = {
             dh: 25
         }, {
             sx: 100,
-            sy: 125,
+            sy: 25,
             sw: 25,
             sh: 25,
             dx: 0,
@@ -127,7 +127,7 @@ export const settings = {
             dh: 25
         },{
             sx: 125,
-            sy: 125,
+            sy: 25,
             sw: 25,
             sh: 25,
             dx: 0,
@@ -139,11 +139,11 @@ export const settings = {
     projectiles: {
         magnitude: {
             min: 1,
-            max: 6
+            max: 5
         },
         angle: {
-            min: -0.5,
-            max: 0.5
+            min: -0.2,
+            max: 0.2
         },
         acceleration: {
             min: 0.01,
@@ -151,4 +151,16 @@ export const settings = {
         },
         rotation: 0.1
     },
+    information: {
+        scoreClassName: '.score',
+        maxTime: 20,
+        timeClassName: '.timer',
+        templateId: 'template',
+        finalInformation: '.final__information',
+        finalScore: '.final__score',
+        restartForm: 'restart__form',
+        scoreText(score:number): string  {
+            return `Votre score final est de ${score} points !`;
+        }
+    }
 }

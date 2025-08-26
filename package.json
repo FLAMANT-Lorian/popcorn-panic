@@ -1,14 +1,15 @@
 {
-  "name": "popcorn-panic",
+  "name": "popcorn-panic-training",
   "version": "1.0.0",
+  "description": "Bienvenue dans **Popcorn Panic!**! Le but est simple : **clique sur les pop-corns qui jaillissent pour marquer un maximum de points**, mais attention...",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Daniel <daniel.schreurs@hepl.be>",
+  "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "vite": "^6.3.3"
+  "dependencies": {
+    "sass": "^1.89.0",
+    "vite": "^6.3.5"
   }
 }

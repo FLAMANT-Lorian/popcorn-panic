@@ -10,14 +10,32 @@
 </head>
 <body>
 
-    <h1>🍿 Popcorn Panic</h1>
+<h1>🍿 Popcorn Panic</h1>
+<form method="get" action="#" id="restart__form">
+    <button type="submit" class="restart__button">Recommencer le jeu</button>
+</form>
+<div class="information">
+    <p id="phone-number-digit">
 
-    <canvas width="500" height="500" id="popcorn" class="glass-window"></canvas>
+    </p>
+    <p class="score">Score :</p>
+    <p class="timer">Temps restant :</p>
+</div>
 
-    <div class="instructions">
-        Clique sur les <strong>pop-corns</strong> pour marquer des points.<br>
-        Ne clique surtout pas sur un <strong>grain de maïs</strong> !<br><br>
-        Le jeu démarre automatiquement dès que tu cliques sur un premier pop-corn.
-    </div>
+<canvas width="500" height="500" id="popcorn" class="glass-window"></canvas>
+
+<div class="final__information">
+
+</div>
+
+<div class="instructions">
+    Clique sur les <strong>pop-corns</strong> pour marquer des points.<br>
+    Ne clique surtout pas sur un <strong>grain de maïs</strong> !<br><br>
+    Le jeu démarre automatiquement dès que tu cliques sur un premier pop-corn.
+</div>
+
+<template id="template">
+    <p class="final__score"></p>
+</template>
 </body>
 </html>
